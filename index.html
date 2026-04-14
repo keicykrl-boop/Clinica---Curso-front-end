@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+
+<title>Nossa Clínica - Hospital Veterinário</title>
+<link rel="icon" href="img/favicon.png" type="image/png">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="equipe.html">Equipe</a>
+        <a href="agendamento.html">Agendamento</a>
+        <a href="contatos.html">Contato</a>
+    </nav>
+</header>
+    <div class ="main_foto">
+        <img src="img/main.jpg" alt="">
+    </div>
+
+    <section class="pre_agendamento">
+        <div class="form_container">
+            <h2>🐱Pré-agendamento:</h2>
+            <p>Preencha os dados e finalize os detalhes na página de agendamento.</p>
+            <form action="agendamento.html">
+                <input type="text" placeholder="Nome do PET:" required>
+                <select required>
+                    <option value="">Qual a especialidade?</option>
+                    <option value="felina">Medicina Felina</option>
+                    <option value="cirurgia">Cirurgia</option>
+                    <option value="odonto">Odontologia</option>
+                    <option value="dermato">Dermatologia</option>
+                </select>
+                <button type="submit">Continuar Agendamento</button>
+            </form>
+        </div>
+    </section>
+
+    <div class = "titulos">
+    <h1>Especialidades</h1>
+    </div>
+    
+    <section class="especialidades">
+    
+    <div class="card">
+        <img src="img/medfel.jpg">
+        <p>Medicina Felina</p>
+    </div>
+
+    <div class="card">
+        <img src="img/cirvet.jpg">
+        <p>Cirurgia Veterinária</p>
+    </div>
+
+    <div class="card">
+        <img src="img/odtvet.png">
+        <p>Odontologia Veterinária</p>
+    </div>
+
+    <div class="card">
+        <img src="img/dermtvet.jpg">
+        <p>Dermatologia Veterinária</p>
+    </div>
+
+    <div class="card">
+        <img src="img/oftvet.jpg">
+        <p>Oftalmologia Veterinária</p>
+    </div>
+
+    <div class="card">
+        <img src="img/ortvet.jpg">
+        <p>Ortopedia Veterinária</p>
+    </div>
+
+    <div class="card">
+        <img src="img/acvet.jpg">
+        <p>Acupuntura Veterinária</p>
+    </div>
+
+    <div class="card">
+        <img src="img/fvet.jpg">
+        <p>Fisioterapia Veterinária</p>
+    </div>
+
+    <a href=""><button>Todas as especialidades</button></a>
+
+</section>
+
+<section class="testemunhos">
+
+    <h1>Testemunhos dos nossos pacientes!⭐😽</h1>
+
+    <div class="carousel">
+
+        <div class="slides">
+
+            <div class="slide">
+                <img src="img/matcat.jpg">
+                <p>
+                    "Ver o Gergelim sem conseguir andar foi de partir o coração. Achei que ele não voltaria a ser o gatinho ativo de antes, mas o tratamento ortopédico na Nossa Clínica fez milagre! Hoje ele está aqui, firme e forte, subindo em tudo de novo. Gratidão eterna por devolverem a saúde do meu laranjinha!"
+                    <br><br><strong>- Mateus Rodrigues & Gergelim🐾</strong>
+                </p>
+            </div>
+
+            <div class="slide">
+                <img src="img/mariado.png">
+                <p>
+                    "Confio o Jojo de olhos fechados à equipe. Desde o primeiro atendimento, percebi que aqui eles amam o que fazem. O cuidado técnico é impecável, mas o acolhimento humano (e canino!) é o que realmente faz a diferença. Agradecemos e recomendamos. 🙂"
+                    <br><br><strong>- Maria dos Santos & Jojo🐾</strong>
+                </p>
+            </div>
+
+            <div class="slide">
+                <img src="img/mencat.jpg">
+                <p>
+                    "O Minato é o meu melhor amigo de todo o mundo! Eu fico muito feliz quando ele está bem para brincar comigo de ninja. O pessoal da clínica cuida muito bem dele e ele nem chora quando vai lá. Nota mil!!! 😁😹"
+                    <br><br><strong>- Thiago Gabriel & Minato🐾</strong>
+                </p>
+            </div>
+
+        </div>
+
+        <button class="prev">❮</button>
+        <button class="next">❯</button>
+
+    </div>
+
+</section>
+
+<section class="blogs">
+
+    <h1>Últimos artigos</h1>
+
+    <div class="blog_container">
+
+        <div class="blog_card">
+            <a href="artigo.html"><img src="img/bravecto.jpg">
+            <h3>Bravecto 365: proteção prolongada contra pulgas e carrapatos</h3>
+            <p>Pulgas e carrapatos não...</p></a>
+        </div>
+
+        <div class="blog_card">
+            <a href="artigo.html"><img src="img/ades.png">
+            <h3>Adestramento De Cães: Tudo O Que Você Precisa Saber</h3>
+            <p>Veja todas as informações necessárias para você entender...</p></a>
+        </div>
+
+        <div class="blog_card">
+            <a href="artigo.html"><img src="img/vac.jpg">
+            <h3>Vacinas Para Cachorro E Gato: Tudo O Que Você Precisa Saber</h3>
+            <p>Confira as informações sobre as vacinas...</p></a>
+        </div>
+
+    </div>
+
+</section>
+
+    <div class="footer">
+        <p>copyright @ 2026 clinica - Todos os direitos reservados</p>
+        <a href="#"> <p>Confira nossa politica de privacidade</p> </a>
+    </div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

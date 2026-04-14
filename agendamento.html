@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Agendamento</title>
+<link rel="icon" href="img/favicon.png" type="image/png">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="equipe.html">Equipe</a>
+        <a href="agendamento.html">Agendamento</a>
+        <a href="contatos.html">Contato</a>
+    </nav>
+</header>
+
+<section class="form-container">
+    <h2>🐱Agendamento</h2>
+
+    <form id="form">
+    
+        <div class="formulario_agendamento">
+    <div class="flex_container">
+        
+        <div class="coluna_esquerda">
+            <p>Faz aqui mesmo, é rápidinho!</p>
+            
+            <input type="text" placeholder="Nome completo do Tutor:" class="select_custom" required>
+            <input type="tel" id= "telefone" placeholder="Seu telefone: +55 (DDD) ..." class="select_custom" required>
+            <input type="email" id="email" placeholder="Seu e-mail:" class="select_custom" required>
+         
+            <select required class="select_custom">
+                <option value="">Retorno?</option>
+                <option value="sim">Sim, é retorno</option>
+                <option value="nao">Não, primeira vez</option>
+            </select>
+            
+            <select required class="select_custom">
+                <option value="">1ª vez consultando seu PET?</option>
+                <option value="sim">Sim</option>
+                <option value="nao">Não</option>
+            </select>
+
+            <select required class="select_custom">
+                <option value="">Especialidade</option>
+                <option value="cirurgia">Cirurgia</option>
+                <option value="dermatologia">Dermatologia</option>
+                <option value="oftalmologia">Oftalmologia</option>
+                <option value="cardiologia">Cardiologia</option>
+                <option value="fisioterapia">Fisioterapia</option>
+                <option value="acupuntura">Acupuntura</option>
+                <option value="ortopedia">Ortopedia</option>
+                <option value="odontologia">Odontologia</option>
+            </select>
+        </div>
+
+        
+        <div class="coluna_direita">
+    <p>Qual o seu PET?</p>
+    <div class="pet_selector_horizontal"> <label class="pet_option">
+            <input type="radio" name="especie" value="cachorro" required>
+            <div class="pet_card">
+                <img src="img/doguin.jpg" alt="Cachorro">
+                <span>Cachorro</span>
+            </div>
+        </label>
+
+        <label class="pet_option">
+            <input type="radio" name="especie" value="gato">
+            <div class="pet_card">
+                <img src="img/gatin.jpg" alt="Gato">
+                <span>Gato</span>
+            </div>
+        </label>
+    </div>
+</div>
+
+    </div> <button type="submit" class="btn_enviar">Agendar Agora</button>
+</div>
+
+    </form>
+</section>
+
+<script src="script.js"></script>
+
+    <div class="footer">
+        <p>copyright @ 2026 clinica - Todos os direitos reservados</p>
+        <a href="#"> <p>Confira nossa politica de privacidade</p> </a>
+    </div>
+
+
+</body>
+</html>

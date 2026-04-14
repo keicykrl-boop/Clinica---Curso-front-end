@@ -1,0 +1,457 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    -webkit-font-smoothing: antialiased; /* Deixa a fonte ainda mais nítida e leve */
+    color: #4a4a4a; /* Um cinza escuro em vez de preto deixa o visual mais "claro" e suave */
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #84B6EB;
+    padding: 50px;
+}
+
+nav {
+    display: flex;
+    justify-content: right;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #f0f8ff;
+    font-weight: bold;
+}
+
+.main_foto {
+    width: 80%;
+    height: 50%;
+    margin: 70px auto;
+}
+
+.main_foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+.titulos{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.titulos h1{
+    color: #84B6EB;
+}
+
+.especialidades {
+    width: 70%;
+    margin: 50px auto;
+    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.especialidades a {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.card {
+   background-color: #daecff;
+    width: 220px;         
+    height: 280px;     
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;    
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    padding: 0;     
+    
+    transition: all 0.4s ease;
+}
+
+.card:hover {
+    transform: scale(1.10); 
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2); 
+    cursor: pointer; 
+}
+
+.card img {
+    width: 100%;          
+    height: 200px;      
+    object-fit: cover;   
+    margin-bottom: 0;
+}
+
+.card p {
+    color: #5b98da;
+    font-weight: bold;
+    text-align: center;
+    padding: 25px;        
+    margin: 0;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    cursor: pointer;
+}
+
+.especialidades button{
+    padding: 12px 25px;
+    border-radius: 12px;
+    border: none;
+    background-color: #84B6EB;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.blogs {
+    width: 60%;
+    margin: 80px auto;
+    text-align: center;
+}
+
+.blogs a{
+    text-decoration: none;
+}
+
+.blogs h1 {
+    color: #84B6EB;
+    margin-bottom: 40px;
+}
+
+
+.blog_container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+
+.blog_card {
+    width: 30%;
+    text-align: center;
+}
+
+
+.blog_card img {
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+
+.blog_card h3 {
+    color: #84B6EB;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+
+.blog_card p {
+    color: #777;
+    font-size: 14px;
+}
+
+.vets {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+    gap: 40px;
+    margin: 40px;
+    flex-wrap: wrap; 
+}
+
+.vet {
+    text-align: center;
+    flex: 1;           
+    max-width: 300px;  
+    min-width: 250px;  
+}
+
+.vet img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #84B6EB;
+}
+
+.vet p {
+    margin-top: 15px;
+    font-family: 'Quicksand', sans-serif; 
+    text-align: justify;     
+    font-style: italic;      
+    font-weight: normal;    
+    line-height: 1.5;
+}
+
+.vet strong {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #84B6EB;
+}
+
+.form-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    background: rgb(229, 238, 255);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    /* Adicione isso se não tiver: */
+    width: 90%; 
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.form-container input,
+.form-container select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-container button {
+    margin-top: 50px;
+    padding: 10px;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #84B6EB;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.form-container button:hover {
+    background-color: #84B6EB;
+}
+
+.testemunhos {
+    background-color: #84B6EB;
+    padding: 80px 20px;
+    text-align: center;
+    color: white;
+}
+
+.texto-depoimento {
+    text-align: justify;      
+    text-justify: inter-word; 
+    line-height: 1.6;         
+    margin: 15px 0;          
+    color: #444;             
+}
+
+.carousel {
+    position: relative;
+    overflow: hidden;
+    width: 80%;
+    margin: 40px auto;
+}
+
+.slides {
+    display: flex;
+    transition: 0.5s;
+}
+
+.slide {
+    min-width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.slide img {
+    width: 250px;
+    height: 250px;            
+    object-fit: cover;       
+    border-radius: 15px;
+    border: 3px solid white;
+}
+
+.slide p {
+    max-width: 500px;
+    text-align: justify;      
+    text-justify: inter-word; 
+    line-height: 1.6;        
+    color: white;            
+    font-size: 1.1rem;
+    font-style: italic;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+.footer {
+    margin-top: auto;
+    background-color: #84B6EB;
+    width: 100%;
+    min-height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+.footer p{
+    color: #f0f8ff;
+}
+
+.footer a{
+    text-decoration: none;
+}
+
+.pre_agendamento {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.form_container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.pre_agendamento form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.pre_agendamento input, .pre_agendamento select {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.pre_agendamento button {
+    padding: 15px;
+    background-color: #2ecc71; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.flex_container {
+    display: flex;
+    gap: 30px; 
+    align-items: stretch; 
+}
+
+.coluna_esquerda {
+    flex: 1.5;
+}
+
+.coluna_direita {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* ISSO: Alinha a pergunta e o grupo de fotos no centro da coluna */
+}
+
+.coluna_direita p {
+    text-align: center;   /* Centraliza o texto */
+    width: 100%;          /* Faz ele usar toda a largura da coluna */
+    margin-bottom: 20px;  /* Dá o espaço pras fotos não colarem nele */
+    font-weight: bold;    /* Deixa o texto em negrito */
+    display: block;       /* Garante que ele ocupe a linha toda */
+}
+
+.pet_selector_horizontal {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    height: 100%;
+}
+
+.pet_option {
+    flex: 1; 
+}
+
+.pet_card {
+    height: 100%;       
+    min-height: 250px; 
+    width: 100%;
+    position: relative; 
+    overflow: hidden;   
+    border-radius: 12px;
+    border: 2px solid #ddd;
+    display: flex;
+    flex-direction: column;
+}
+
+.pet_card img {
+    width: 100%;        /* Ocupa toda a largura do card */
+    height: 100%;       /* Ocupa toda a altura do card */
+    object-fit: cover;  /* O SEGREDO: A foto preenche tudo sem distorcer, cortando as sobras */
+    display: block;
+}
+
+.pet_card span {
+    position: absolute; /* Coloca o nome "Cachorro" em cima da imagem */
+    bottom: 10px;       /* Alinha no fundo */
+    background: rgba(255, 255, 255, 0.8); /* Fundo semi-transparente para ler melhor */
+    width: 100%;
+    text-align: center;
+    padding: 5px 0;
+    font-weight: bold;
+}
+
+.pet_option input:checked + .pet_card {
+    border-color: #2ecc71;
+    background-color: #f0fff4;
+}
