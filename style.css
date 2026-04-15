@@ -112,6 +112,8 @@ nav a:hover::after {
     color: #84B6EB;
 }
 
+/* Estilo para os cards de serviços */
+
 .especialidades {
 width: 100%;            
     max-width: 1000px;      
@@ -174,15 +176,7 @@ width: 100%;
     cursor: pointer;
 }
 
-.especialidades button{
-    padding: 12px 25px;
-    border-radius: 12px;
-    border: none;
-    background-color: #84B6EB;
-    color: white;
-    cursor: pointer;
-    font-size: 16px;
-}
+/* Blog */
 
 .blogs {
     width: 60%;
@@ -215,6 +209,8 @@ width: 100%;
 
 .blog_card img {
     width: 100%;
+    aspect-ratio: 16/9; 
+    object-fit: cover;   
     border-radius: 15px;
     margin-bottom: 15px;
 }
@@ -231,6 +227,8 @@ width: 100%;
     color: #777;
     font-size: 14px;
 }
+
+/* Perfil dos veterinarios */
 
 .vets {
     display: flex;
@@ -271,6 +269,43 @@ width: 100%;
     font-weight: bold;
     color: #84B6EB;
 }
+
+.vets {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
+.vet {
+    background-color: #f8faff; 
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid #eef2f7;
+}
+
+.sobre_nos {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+}
+
+.sobre_nos p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #666;
+}
+
+.divisor {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(132, 182, 235, 0.5), rgba(0, 0, 0, 0));
+    margin: 40px 0;
+}
+
+
+/* Formulário de Agendamento */
 
 .form-container {
     max-width: 1000px;
@@ -313,6 +348,37 @@ width: 100%;
 .form-container button:hover {
     background-color: #84B6EB;
 }
+
+.select_custom {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 2px solid #daecff;
+    border-radius: 10px;
+    background-color: white;
+    color: #4a4a4a; 
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.select_custom:focus {
+    border-color: #84B6EB;
+    box-shadow: 0 0 8px rgba(132, 182, 235, 0.2);
+}
+
+.select_custom option {
+    background-color: white; 
+    color: #4a4a4a;          
+    padding: 10px;
+}
+
+.select_custom option:first-child {
+    color: #999;
+}
+
+/* Testemunhos / carrosel */
 
 .testemunhos {
     background-color: #84B6EB;
@@ -379,6 +445,8 @@ width: 100%;
 .prev { left: 10px; }
 .next { right: 10px; }
 
+/* Footer */
+
 .footer {
     margin-top: auto;
     background-color: #84B6EB;
@@ -397,6 +465,8 @@ width: 100%;
 .footer a{
     text-decoration: none;
 }
+
+/* Pre-Agendamento */
 
 .pre_agendamento {
     background-color: #f9f9f9;
@@ -473,6 +543,8 @@ width: 100%;
     flex: 1; 
 }
 
+/* Estilo para os cards de pets */
+
 .pet_card {
     height: 100%;       
     min-height: 250px; 
@@ -507,65 +579,53 @@ width: 100%;
     background-color: #f0fff4;
 }
 
-.select_custom {
+/* artigos */
+
+.blog {
+    width: 70%;
+    margin: 60px auto;
+}
+
+.blog_header h1 {
+    font-size: 2.2rem;
+    color: #84B6EB;
+    margin-bottom: 10px;
+}
+
+.blog_meta {
+    color: #777;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+}
+
+.blog_header img {
     width: 100%;
-    padding: 12px;
-    margin-bottom: 15px;
-    border: 2px solid #daecff;
-    border-radius: 10px;
-    background-color: white;
-    color: #4a4a4a; 
-    font-size: 16px;
-    cursor: pointer;
-    outline: none;
-    transition: all 0.3s ease;
-}
-
-.select_custom:focus {
-    border-color: #84B6EB;
-    box-shadow: 0 0 8px rgba(132, 182, 235, 0.2);
-}
-
-.select_custom option {
-    background-color: white; 
-    color: #4a4a4a;          
-    padding: 10px;
-}
-
-.select_custom option:first-child {
-    color: #999;
-}
-
-.sobre_nos {
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto 40px auto;
-}
-
-.sobre_nos p {
-    font-size: 1.2rem;
-    line-height: 1.8;
-    color: #666;
-}
-
-.divisor {
-    border: 0;
-    height: 1px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(132, 182, 235, 0.5), rgba(0, 0, 0, 0));
-    margin: 40px 0;
-}
-
-.vets {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
-    padding: 20px 0;
-}
-
-.vet {
-    background-color: #f8faff; 
-    padding: 20px;
     border-radius: 20px;
-    border: 1px solid #eef2f7;
+    margin-bottom: 30px;
+}
+
+.blog_content {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.blog_content h2 {
+    margin: 40px 0 15px;
+    color: #84B6EB;
+}
+
+.blog_content p {
+    font-size: 17px;
+    text-align: justify;
+}
+
+.highlight {
+    background: #eaf4ff;
+    border-left: 5px solid #84B6EB;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 30px 0;
+    font-weight: bold;
 }
