@@ -2,11 +2,17 @@
 <html lang="pt-br">
 <head>
 <meta charset="UTF-8">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
 
 <title>Nossa Clínica - Hospital Veterinário</title>
 <link rel="icon" href="img/favicon.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 
@@ -14,16 +20,51 @@
 
 <header>
     <a href="index.html" class="logo">
-        <img src="img/Logo_Pet_shop_roxo-removebg-preview.png" alt="Logo BlueVet">
+        <img src="img/logopet2.png" alt="Logo BlueVet">
     </a>
     <nav>
         <a href="index.html">Home</a>
         <a href="equipe.html">Equipe</a>
         <a href="agendamento.html">Agendamento</a>
-        <a href="contatos.html">Contato</a>
+        <a href="contatos.html">Contato<i class="fa-solid fa-magnifying-glass"></i></a>
     </nav>
 </header>
 
+<main class="wrapper-contatos">
+    <section class="form-container">
+        <h2>📩 Entre em Contato</h2>
+        <p style="text-align: center; margin-bottom: 20px;">Precisa de ajuda? Mande uma mensagem nossa equipe! 🐕</p>
+
+        <form id="form-contato">
+            <div class="formulario_vertical">
+                <input type="text" name="nome" placeholder="Seu nome completo:" required>
+                
+                <input type="tel" name="telefone" placeholder="Seu telefone (WhatsApp): +55 (DDD) ...">
+                
+                <input type="email" name="email" placeholder="Seu e-mail:" required>
+
+                <select name="assunto" class="select_custom">
+                    <option value="" disabled selected>Selecione o assunto:</option>
+                    <option value="duvidas">Duvidas</option>
+                    <option value="ajuda">Ajuda</option>
+                    <option value="ouvidoria">Ouvidoria</option>
+                    <option value="compras">Compras</option>
+                </select>
+
+                <select name="unidade" class="select_custom">
+                    <option value="" disabled selected>Selecione a Unidade:</option>
+                    <option value="matriz">Unidade Matriz (Centro Mossoró)</option>
+                    <option value="norte">Unidade Secundária (Zona Norte Mossoró)</option>
+                </select>
+
+                <textarea name="mensagem" placeholder="Escreva sua mensagem aqui..." rows="5" 
+                    style="width: 100%; padding: 10px; border-radius: 10px; border: 1px solid #ccc; margin-bottom: 10px; font-family: 'Quicksand', sans-serif; resize: none; outline: none;"></textarea>
+
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+    </section>
+</main>
     
     <div class="footer">
         <p>copyright @ 2026 clinica - Todos os direitos reservados</p>
