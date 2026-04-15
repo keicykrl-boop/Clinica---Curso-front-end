@@ -11,8 +11,8 @@
 }
 
 body {
-    -webkit-font-smoothing: antialiased; /* Deixa a fonte ainda mais nítida e leve */
-    color: #4a4a4a; /* Um cinza escuro em vez de preto deixa o visual mais "claro" e suave */
+    -webkit-font-smoothing: antialiased;
+    color: #4a4a4a;
 }
 
 html, body {
@@ -25,10 +25,10 @@ body {
 }
 
 header {
-    background-color: #84B6EB;
-    padding: 15px 8%; /* Espaçamento elegante */
+    background-color: #5396ddb9;
+    padding: 15px 8%;
     display: flex;
-    justify-content: space-between; /* Logo na esquerda, Menu na direita */
+    justify-content: space-between; 
     align-items: center;
     position: sticky;
     top: 0;
@@ -37,14 +37,14 @@ header {
 }
 
 .logo img {
-    height: 70px; /* Tamanho ideal para barra de navegação */
+    height: 90px;
     width: auto;
-    transition: all 0.4s ease; /* Transição suave */
+    transition: all 0.4s ease;
 }
 
 .logo img:hover {
-    transform: scale(1.1); /* Aumenta levemente */
-    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.5)); /* Cria um brilho em volta da logo */
+    transform: scale(1.2); 
+    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.5)); 
 }
 
 
@@ -80,18 +80,18 @@ nav a:hover::after {
 
 
 .bg_fixed_hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('img/main.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('img/dogcat.jpg');
     background-size: cover;
     background-position: center;
-    background-attachment: fixed; /* O segredo do efeito de profundidade */
-    min-height: 100vh; /* Ocupa a altura toda da tela */
+    background-attachment: fixed; 
+    min-height: 100vh; 
     display: flex;
     justify-content: center;
     align-items: flex-start;
     padding: 150px 20px 100px 20px;
 }
 
-/* 2. A "Tela" branca (container) que flutua sobre o fundo */
+
 .container_sobreposto {
     background: white;
     width: 100%;
@@ -118,7 +118,7 @@ width: 100%;
     margin: 40px auto;     
     
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* Ajuste inteligente de colunas */
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); 
     gap: 30px;              
     justify-items: center;  
     justify-content: center;
@@ -279,7 +279,7 @@ width: 100%;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    /* Adicione isso se não tiver: */
+
     width: 90%; 
 }
 
@@ -451,15 +451,15 @@ width: 100%;
     flex: 1;
     display: flex;
     flex-direction: column;
-    align-items: center; /* ISSO: Alinha a pergunta e o grupo de fotos no centro da coluna */
+    align-items: center; 
 }
 
 .coluna_direita p {
-    text-align: center;   /* Centraliza o texto */
-    width: 100%;          /* Faz ele usar toda a largura da coluna */
-    margin-bottom: 20px;  /* Dá o espaço pras fotos não colarem nele */
-    font-weight: bold;    /* Deixa o texto em negrito */
-    display: block;       /* Garante que ele ocupe a linha toda */
+    text-align: center;   
+    width: 100%;          
+    margin-bottom: 20px;  
+    font-weight: bold;    
+    display: block;       
 }
 
 .pet_selector_horizontal {
@@ -486,16 +486,16 @@ width: 100%;
 }
 
 .pet_card img {
-    width: 100%;        /* Ocupa toda a largura do card */
-    height: 100%;       /* Ocupa toda a altura do card */
-    object-fit: cover;  /* O SEGREDO: A foto preenche tudo sem distorcer, cortando as sobras */
+    width: 100%;       
+    height: 100%;       
+    object-fit: cover; 
     display: block;
 }
 
 .pet_card span {
-    position: absolute; /* Coloca o nome "Cachorro" em cima da imagem */
-    bottom: 10px;       /* Alinha no fundo */
-    background: rgba(255, 255, 255, 0.8); /* Fundo semi-transparente para ler melhor */
+    position: absolute; 
+    bottom: 10px;       
+    background: rgba(255, 255, 255, 0.8);
     width: 100%;
     text-align: center;
     padding: 5px 0;
@@ -507,7 +507,6 @@ width: 100%;
     background-color: #f0fff4;
 }
 
-/* Estilização do campo de seleção (o "quadrado" principal) */
 .select_custom {
     width: 100%;
     padding: 12px;
@@ -515,27 +514,58 @@ width: 100%;
     border: 2px solid #daecff;
     border-radius: 10px;
     background-color: white;
-    color: #4a4a4a; /* Cor do texto quando fechado */
+    color: #4a4a4a; 
     font-size: 16px;
     cursor: pointer;
     outline: none;
     transition: all 0.3s ease;
 }
 
-/* Quando você clica no campo */
 .select_custom:focus {
     border-color: #84B6EB;
     box-shadow: 0 0 8px rgba(132, 182, 235, 0.2);
 }
 
-/* O SEGREDO: Estilizando a lista que abre (as opções) */
 .select_custom option {
-    background-color: white; /* Garante fundo branco na lista */
-    color: #4a4a4a;          /* Garante texto cinza escuro na lista */
+    background-color: white; 
+    color: #4a4a4a;          
     padding: 10px;
 }
 
-/* Estilo para a primeira opção (o título/placeholder) ficar cinza claro */
 .select_custom option:first-child {
     color: #999;
+}
+
+.sobre_nos {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+}
+
+.sobre_nos p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #666;
+}
+
+.divisor {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(132, 182, 235, 0.5), rgba(0, 0, 0, 0));
+    margin: 40px 0;
+}
+
+.vets {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
+.vet {
+    background-color: #f8faff; 
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid #eef2f7;
 }
